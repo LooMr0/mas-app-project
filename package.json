@@ -1,0 +1,79 @@
+{
+  "name": "mas-app-project",
+  "version": "1.0.0",
+  "author": "seven liu",
+  "company": "mas",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve && node --max-old-space-size=8192",
+    "build": "vue-cli-service build && node --max-old-space-size=8192",
+    "lint": "vue-cli-service lint",
+    "new:comp": "node ./scripts/generateComponent",
+    "new:view": "node ./scripts/generateView",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "cube-ui": "~1.12.15",
+    "vue": "^2.6.10",
+    "vue-particles": "^1.0.9",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-plugin-unit-mocha": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.1.2",
+    "chalk": "^2.4.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "postcss-px2rem": "^0.3.0",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-cube-ui": "^0.2.5",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {},
+      "postcss-px2rem": {
+        "remUnit": 37.5
+      }
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 11",
+    "Android >= 4.0",
+    "iOS >= 8"
+  ],
+  "transformModules": {
+    "cube-ui": {
+      "transform": "cube-ui/src/modules/${member}",
+      "kebabCase": true
+    }
+  }
+}
