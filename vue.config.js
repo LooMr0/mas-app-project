@@ -35,13 +35,13 @@ module.exports = {
       // // #endregion
 
       // #region 分析打包体积
-      if (process.env.IS_ANALYZE) {
-        config.plugin('webpack-report').use(BundleAnalyzerPlugin, [
-          {
-            analyzerMode: 'static'
-          }
-        ])
-      }
+      // if (process.env.IS_ANALYZE) {
+      //   config.plugin('webpack-report').use(BundleAnalyzerPlugin, [
+      //     {
+      //       analyzerMode: 'static'
+      //     }
+      //   ])
+      // }
       // #endregion 分析打包体积
     }
   },
