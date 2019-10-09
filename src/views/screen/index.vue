@@ -20,6 +20,7 @@
     >
     </vue-particles>
     <div class="container">
+<!--      这个组件只是一个示范的例子 具体的功能和样式请根据实际业务开发-->
       <lbTime></lbTime>
     </div>
   </div>
