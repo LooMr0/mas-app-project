@@ -20,16 +20,17 @@
     >
     </vue-particles>
     <div class="container">
-
+      <lbTime></lbTime>
     </div>
   </div>
 </template>
 
 <script>
+  import lbTime from '@/components/global/lb-time'
   export default {
     name: 'screen',
     components: {
-
+      lbTime
     },
     data() {
       return {
